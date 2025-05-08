@@ -1,0 +1,12 @@
+2025/05/08 20:18:07 [notice] 64#64: signal process started
+2025/05/08 20:19:54 [emerg] 31#31: unknown log format "main" in /etc/nginx/api_conf.d/warehouse_api.conf:3
+2025/05/08 20:20:04 [notice] 32#32: signal process started
+2025/05/08 20:20:52 [emerg] 34#34: unknown log format "main" in /etc/nginx/api_conf.d/warehouse_api_simple.conf:7
+2025/05/08 20:21:04 [emerg] 35#35: host not found in upstream "warehouse_inventory" in /etc/nginx/api_conf.d/warehouse_api_simple.conf:12
+2025/05/08 20:22:03 [notice] 36#36: signal process started
+2025/05/08 20:22:14 [error] 37#37: *9 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.65.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2025/05/08 20:22:15 [error] 37#37: *9 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.65.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2025/05/08 20:22:15 [error] 37#37: *9 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.65.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2025/05/08 20:22:16 [error] 37#37: *9 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.65.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2025/05/08 20:22:16 [error] 37#37: *9 "/etc/nginx/html/index.html" is not found (2: No such file or directory), client: 192.168.65.1, server: , request: "GET / HTTP/1.1", host: "localhost"
+2025/05/08 20:31:13 [notice] 29#29: signal process started
