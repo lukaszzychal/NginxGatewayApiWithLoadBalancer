@@ -1,0 +1,33 @@
+services:
+  app-pricing-1:
+    image: service-pricing:0.1.0
+    container_name: service-pricing-1
+    build:
+      context: ./api
+    environment:
+      - SERVICE_ID=pricing-1
+      - PORT=80
+    networks:
+      - docker-basic-api-gateway-network
+
+  app-pricing-2:
+    image: service-pricing:0.1.0
+    container_name: service-pricing-2
+    build:
+      context: ./api
+    environment:
+      - SERVICE_ID=pricing-2
+      - PORT=80
+    networks:
+      - docker-basic-api-gateway-network
+
+  app-pricing-3:
+    image: service-pricing:0.1.0
+    container_name: service-pricing-3
+    build:
+      context: ./api
+    environment:
+      - SERVICE_ID=pricing-3
+      - PORT=80
+    networks:
+      - docker-basic-api-gateway-network

@@ -1,0 +1,36 @@
+services:
+  web:
+    image: api-gateway:0.1.0
+    container_name: api-gateway-1
+    build: ./etc/nginx
+    volumes:
+      - ./etc/nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./etc/nginx/api_gateway.conf:/etc/nginx/api_gateway.conf
+      - ./etc/nginx/api_backends.conf:/etc/nginx/api_backends.conf
+      - ./etc/nginx/api_json_errors.conf:/etc/nginx/api_json_errors.conf
+      - ./etc/nginx/api_keys.conf:/etc/nginx/api_keys.conf
+      - ./etc/nginx/api_conf.d:/etc/nginx/api_conf.d
+      - ./logs:/var/log/nginx/
+    ports:
+      - "80:80"
+    networks:
+      - docker-basic-api-gateway-network
+
+#  app-inventory-1:
+#    extends:
+#      file: docker-compose-app-inventory.yaml
+#      service: app-inventory-1
+#
+#  app-inventory-2:
+#    extends:
+#      file: docker-compose-app-inventory.yaml
+#      service: app-inventory-2
+
+#  app-inventory-3:
+#    extends:
+#      file: docker-compose-app-inventory.yaml
+#      service: app-inventory-3
+
+networks:
+  docker-basic-api-gateway-network:
+    driver: bridge
